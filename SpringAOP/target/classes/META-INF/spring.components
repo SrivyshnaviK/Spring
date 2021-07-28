@@ -1,0 +1,6 @@
+com.vyshnavi.DemoConfig=org.springframework.stereotype.Component
+com.vyshnavi.aspects.AnalyticsAspect=org.springframework.stereotype.Component
+com.vyshnavi.aspects.LoggingAspect=org.springframework.stereotype.Component
+com.vyshnavi.dao.AccountDAO=org.springframework.stereotype.Component
+com.vyshnavi.dao.MembershipDAO=org.springframework.stereotype.Component
+com.vyshnavi.service.TrafficFortuneService=org.springframework.stereotype.Component
