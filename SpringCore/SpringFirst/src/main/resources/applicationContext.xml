@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:property-placeholder location="classpath:value.properties" />
+    <bean id="myFortune"
+          class="com.spring.HappyFortuneService">
+    </bean>
+    <bean id="coach"
+          class="com.spring.BaseBallCoach">
+        <constructor-arg ref="myFortune" />
+    </bean>
+    <bean id="myCricketCoach"
+          class="com.spring.CricketCoach">
+          <property name="fortuneService" ref="myFortune"/>
+          <property name="email" value="${vyshnavi.email}"/>
+          <property name="name" value="${vyshnavi.name}"/>
+    </bean>
+    <bean id="myCoach"
+          class="com.spring.TrackCoach">
+    </bean>
+</beans>
