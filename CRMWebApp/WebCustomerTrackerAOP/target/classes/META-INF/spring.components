@@ -1,0 +1,6 @@
+com.vyshnavi.DAO.CustomerDAOImpl=org.springframework.stereotype.Component
+com.vyshnavi.TestDbServlet=javax.servlet.annotation.WebServlet
+com.vyshnavi.aspects.CRMLoggingAspect=org.springframework.stereotype.Component
+com.vyshnavi.controller.CustomerController=org.springframework.stereotype.Component
+com.vyshnavi.entities.Customer=javax.persistence.Entity,javax.persistence.Table
+com.vyshnavi.service.CustomerServiceImpl=org.springframework.stereotype.Component
